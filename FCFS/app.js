@@ -17,7 +17,7 @@ function FCFS(arrivalTime, burstTime){
   for(var x = 0; x < arrivalTime.length; x++)
     objCollection.push({ A: arrivalTime[x], B: burstTime[x] });
 
-  //Sorting begin with its corresponding Arrival Time and Burst Time
+  //Sorting begins with its corresponding Arrival Time and Burst Time
   //No interchanging of partner happens
   objCollection.sort(function(a, b){
     return a.A - b.A;
